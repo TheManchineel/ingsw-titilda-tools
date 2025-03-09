@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "card-mapping-tool"
+version = "0.1.0"
+description = ""
+authors = ["TheManchineel <37479927+TheManchineel@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyqt6 = "^6.8.1"
+pydantic = "^2.10.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
