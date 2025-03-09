@@ -31,6 +31,8 @@ class TileType(str, Enum):
     DoublePowerCenterTile = "DoublePowerCenterTile"
     SingleEngineTile = "SingleEngineTile"
     DoubleEngineTile = "DoubleEngineTile"
+    PurpleLifeSupportSystemTile = "PurpleLifeSupportSystemTile"
+    BrownLifeSupportSystemTile = "BrownLifeSupportSystemTile"
 
 
 class ConnectorType(str, Enum):
