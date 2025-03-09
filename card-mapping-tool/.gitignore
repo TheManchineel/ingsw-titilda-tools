@@ -121,6 +121,6 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-./tiles
+tiles/
 
 tiles.json
