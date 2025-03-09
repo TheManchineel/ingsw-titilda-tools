@@ -33,7 +33,10 @@ class TileType(str, Enum):
     DoubleEngineTile = "DoubleEngineTile"
     PurpleLifeSupportSystemTile = "PurpleLifeSupportSystemTile"
     BrownLifeSupportSystemTile = "BrownLifeSupportSystemTile"
-
+    NEShieldGeneratorTile = "NEShieldGeneratorTile"
+    SEShieldGeneratorTile = "SEShieldGeneratorTile"
+    SWShieldGeneratorTile = "SWShieldGeneratorTile"
+    NWShieldGeneratorTile = "NWShieldGeneratorTile"
 
 class ConnectorType(str, Enum):
     Smooth = "Smooth"
