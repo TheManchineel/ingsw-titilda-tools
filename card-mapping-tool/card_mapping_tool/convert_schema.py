@@ -9,7 +9,10 @@ central_housing_color_mappings = {}
 
 for k, v in tiles_data.items():
     if not v["tile_type"].endswith("CentralHousingUnitTile"):
-        new_tile = {"class": v["tile_type"], "data": {"assetIdentifier": k, "connectors": v["connectors"]}}
+        new_tile = {
+            "class": v["tile_type"],
+            "data": {"assetIdentifier": k, "sideConnectors": list(map(lambda x: x.upper(), v["connectors"]))},
+        }
         deck_tiles_data.append(new_tile)
     else:
         color = v["tile_type"].split("CentralHousingUnitTile")[0].upper()
