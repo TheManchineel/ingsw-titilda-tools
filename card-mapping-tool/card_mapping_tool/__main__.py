@@ -39,6 +39,7 @@ class TileType(str, Enum):
     ShieldGeneratorTile = "ShieldGeneratorTile"
     NothingTile = "NothingTile"
 
+
 class ConnectorType(str, Enum):
     Smooth = "Smooth"
     OnePiped = "OnePiped"
