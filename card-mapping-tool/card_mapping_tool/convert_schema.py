@@ -8,6 +8,8 @@ deck_tiles_data = []
 central_housing_color_mappings = {}
 
 for k, v in tiles_data.items():
+    if v["tile_type"] == "NothingTile":
+        continue
     if not v["tile_type"].endswith("CentralHousingUnitTile"):
         new_tile = {
             "className": v["tile_type"],
@@ -15,8 +17,6 @@ for k, v in tiles_data.items():
         }
         deck_tiles_data.append(new_tile)
     else:
-        if v["tile_type"] == "NothingTile":
-            continue
         color = v["tile_type"].split("CentralHousingUnitTile")[0].upper()
         central_housing_color_mappings[color] = k
 
